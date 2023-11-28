@@ -11,7 +11,7 @@ export default function App() {
     'Outfit-SemiBold': require('./assets/fonts/Outfit-SemiBold.ttf'),
   });
   return (
-    <ClerkProvider publishableKey={"pk_test_Z2VudGxlLXNwYW5pZWwtNzUuY2xlcmsuYWNjb3VudHMuZGV2JA"}>
+    <ClerkProvider publishableKey={"************************************************"}>
     <View style={styles.container}>
      
      <SignedIn>
