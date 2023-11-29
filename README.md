@@ -3,7 +3,8 @@ Certainly! Below is the complete README content in a single markdown file:
 markdown
 Copy code
 # DoctorAi: Mobile Health Assistant
-![image](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/99a2826a-bb91-4398-93ef-c8afde247278)  ![image](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/4955cbcf-6894-4eda-860d-caf5dbb7f3ef)
+![image](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/99a2826a-bb91-4398-93ef-c8afde247278) ![Untitled-1](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/29208f2e-bffc-411d-a048-6671e3b3a53d)
+
 
 
 DoctorAi is a mobile health assistant that utilizes artificial intelligence to enhance the healthcare experience. This React Native app integrates the power of OpenAI's ChatGPT API for intelligent and natural conversations, providing users with intelligent responses to medical queries, symptoms analysis, and general health-related questions.
