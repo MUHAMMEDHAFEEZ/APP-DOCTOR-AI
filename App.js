@@ -7,6 +7,7 @@ import TabNavigation from './APP/Navigations/TabNavigation';
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <ClerkProvider publishableKey="pk_test_Z2VudGxlLXNwYW5pZWwtNzUuY2xlcmsuYWNjb3VudHMuZGV2JA">
       <View style={styles.container}>
         <NavigationContainer>
@@ -18,6 +19,19 @@ const App = () => {
           </SignedOut>
         </NavigationContainer>
       </View>
+=======
+    <ClerkProvider publishableKey={"************************************************"}>
+    <View style={styles.container}>
+     
+     <SignedIn>
+          <Text>You are Signed in</Text>
+      </SignedIn>
+        
+      <SignedOut>
+        <LoginScreen/>
+      </SignedOut>
+    </View>
+>>>>>>> 27e465b85c0f90b8a0abcbd9ebfcf42f5506ff5a
     </ClerkProvider>
   );
 };
