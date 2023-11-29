@@ -59,16 +59,22 @@ const styles = StyleSheet.create({
   },
   googleImage: {
     top: 637, // Adjust the top position as needed
-    left: 530, // Adjust the left position as needed
+    left: 185, // Adjust the left position as needed
   },
   iconImage: {
     top: 615, // Adjust the top position as needed
-    left: 500, // Adjust the left position as needed
+    left: 155, // Adjust the left position as needed
   },
   rectangleImage: {
-    backgroundColor: Colors.WHITE,
+    // backgroundColor: Colors.WHITE,
+    width: 376,
+    height: 67,
     borderRadius: 15,
+    // marginRight:25,
+    // marginLeft:50,
     top: 675, // Adjust the top position as needed
-    left: 365, // Adjust the left position as needed
+    left:20,
+    // left:5, // Adjust the left position as needed
+    right:50,
   },
 });
