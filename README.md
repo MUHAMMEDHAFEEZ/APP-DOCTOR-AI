@@ -32,7 +32,7 @@ DoctorAi is a mobile health assistant that utilizes artificial intelligence to e
 2. Navigate to the project folder:
 
    ```bash
-   cd DoctorAi
+   cd APP-DOCTOR-AI
    ```
 3. Install dependencies:
 
