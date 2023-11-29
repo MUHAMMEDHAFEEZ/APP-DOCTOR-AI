@@ -47,13 +47,13 @@ DoctorAi is a mobile health assistant that utilizes artificial intelligence to e
 Run the app:
 
 
-```bash
-npx react-native run-android
-```
+   ```bash
+    npm start
+   ```
 # or
-```
-npx react-native run-ios
-```
+   ```
+   npx react-native run-ios
+   ```
 Configuration
 Obtain an API key from OpenAI for the ChatGPT integration.
 
