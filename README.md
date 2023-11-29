@@ -3,7 +3,8 @@ Certainly! Below is the complete README content in a single markdown file:
 markdown
 Copy code
 # DoctorAi: Mobile Health Assistant
-![image](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/99a2826a-bb91-4398-93ef-c8afde247278) ![Untitled-1](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/29208f2e-bffc-411d-a048-6671e3b3a53d)
+ ![Untitled-2](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/1ebc0613-6fc8-4962-a9ab-e9aa683745bb) ![Untitled-1](https://github.com/MUHAMMEDHAFEEZ/APP-DOCTOR-AI/assets/125500179/29208f2e-bffc-411d-a048-6671e3b3a53d)
+
 
 
 
