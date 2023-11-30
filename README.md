@@ -14,6 +14,7 @@ DoctorAi is a mobile health assistant that utilizes artificial intelligence to e
 - **ChatGPT Integration:** Utilize OpenAI's ChatGPT API for intelligent and natural conversations within the app.
 - **Medical Assistance:** Obtain intelligent responses to medical queries, symptoms analysis, and general health-related questions.
 - **User-Friendly Interface:** Enjoy a seamless and user-friendly mobile app interface for a better healthcare experience.
+- **Show the nearest Hospital in your area.
 
 ## Getting Started
 
