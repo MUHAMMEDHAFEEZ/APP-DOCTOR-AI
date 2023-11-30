@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import ChatScreen from '../Screen/chatScreen';
+import ChatScreen from '../Screen/ChatScreen';
 import HomeScreen from '../Screen/HomeScreen';
 import ProfileScreen from '../Screen/ProfileScreen';
 import NfcScreen from '../Screen/NfcScreen';
@@ -13,25 +13,25 @@ const TabNavigation = () => {
       <Tab.Screen name="Chat" component={ChatScreen}
       options={{
         tabBarIcon:({color,size})=>(
-            <Ionicons name="chatbox" size={size} color={color} />
+            <Ionicons name="chatbox" size={size} color="#00A859" />
         )
       }} />
       <Tab.Screen name="Home" component={HomeScreen} 
       options={{
         tabBarIcon:({color,size})=>(
-            <Entypo name="home" size={size} color={color} />
+            <Entypo name="home" size={size} color="#00A859" />
         )
       }}/>
       <Tab.Screen name="Profile" component={ProfileScreen}
       options={{
         tabBarIcon:({color,size})=>(
-            <AntDesign name="profile" size={size} color={color} />
+            <AntDesign name="profile" size={size} color="#00A859" />
         )
       }} />
       <Tab.Screen name="Nfc" component={NfcScreen} 
       options={{
         tabBarIcon:({color,size})=>(
-            <MaterialCommunityIcons name="nfc" size={size} color={color} />
+            <MaterialCommunityIcons name="nfc" size={size} color="#00A859" />
         )
 
 
