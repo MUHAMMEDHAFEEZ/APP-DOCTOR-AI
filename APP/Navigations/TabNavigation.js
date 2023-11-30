@@ -4,7 +4,9 @@ import ChatScreen from '../Screen/ChatScreen';
 import HomeScreen from '../Screen/HomeScreen';
 import ProfileScreen from '../Screen/ProfileScreen';
 import NfcScreen from '../Screen/NfcScreen';
-import { AntDesign ,MaterialCommunityIcons,Ionicons,Entypo } from '@expo/vector-icons'; 
+import MapsScreen from '../Screen/MapsScreen'
+import { AntDesign ,MaterialCommunityIcons,Ionicons,Entypo,Feather } from '@expo/vector-icons'; 
+import Colors from '../Utils/Colors';
 const Tab = createBottomTabNavigator();
 
 const TabNavigation = () => {
@@ -32,6 +34,14 @@ const TabNavigation = () => {
       options={{
         tabBarIcon:({color,size})=>(
             <MaterialCommunityIcons name="nfc" size={size} color="#00A859" />
+        )
+
+
+      }}/>
+      <Tab.Screen name="MAP" component={MapsScreen} 
+      options={{
+        tabBarIcon:({color,size})=>(
+          <Feather name="map" size={24} color="#00A859" />
         )
 
 
