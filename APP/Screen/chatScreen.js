@@ -11,6 +11,7 @@ const ChatScreen = () => {
   const sendMessageToBot = async () => {
     try {
       // Send user message
+      setMessage('');
       const userMessage = { text: message, sender: 'user', key: String(messages.length) };
       setMessages((prevMessages) => [...prevMessages, userMessage]);
 
@@ -23,19 +24,22 @@ const ChatScreen = () => {
         body: JSON.stringify({ content: message }),
       });
 
-      const responseData = await response.json();
+      if (response.ok) {
+        const responseData = await response.json();
+        console.log('API Response Data:', responseData);
 
-      // Display bot's response after a short delay
-      setTimeout(() => {
-        const botMessage = { text: responseData.content, sender: 'bot', key: String(messages.length + 1) };
+        // Display bot's response immediately
+        const botMessage = { text: responseData.message, sender: 'bot', key: String(messages.length + 1) };
         setMessages((prevMessages) => [...prevMessages, botMessage]);
-      }, 3000); // Adjust the delay as needed
 
-      // Clear the input box after sending a message
-      setMessage('');
+        
+      } else {
+        console.error('API Error:', response.status);
+        Alert.alert('API Error', 'An error occurred while communicating with the bot.');
+      }
     } catch (error) {
       console.error('Error sending/receiving messages:', error);
-      Alert.alert('Error', 'An error occurred while communicating with the bot.');
+      Alert.alert('Error', 'An unexpected error occurred.');
     }
   };
 
@@ -48,9 +52,10 @@ const ChatScreen = () => {
     <View style={{ marginBottom: 10, alignSelf: item.sender === 'user' ? 'flex-end' : 'flex-start' }}>
       <Text style={{
         fontSize: 16,
-        backgroundColor: item.sender === 'user' ? '#add8e6' : item.sender === 'bot' ? '#00A859' : '#e6e6fa', // Change bot's response color to green
+        backgroundColor: item.sender === 'user' ? '#313131' : item.sender === 'bot' ? '#00A859' : '#e6e6fa',
         padding: 8,
         borderRadius: 8,
+        color: 'white', // Set the font color to white
       }}>
         {item.text}
       </Text>
@@ -58,7 +63,7 @@ const ChatScreen = () => {
   );
 
   return (
-    <View style={{ flex: 1, padding: 20,marginTop:30 }}>
+    <View style={{ flex: 1, padding: 16, marginTop: 30 }}>
       <FlatList
         ref={flatListRef}
         data={messages}
