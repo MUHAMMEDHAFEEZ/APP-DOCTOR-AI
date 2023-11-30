@@ -34,11 +34,11 @@ export default function LoginScreen() {
       <Image source={app} style={styles.appImage} />
       <View style={styles.sendMessageContainer}>
         <TouchableOpacity
-          style={{ flexDirection: 'row', backgroundColor: '#00A859', borderRadius: 15, padding: 10, width: 376, height: 67, alignItems: 'center', justifyContent: 'center' }}
+          style={{ flexDirection: 'row', borderColor: '#00A859', borderWidth: 2, borderRadius: 15, padding: 10, width: 376, height: 67, alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent' }}
           onPress={onPress}
         >
-          <FontAwesome name="google" size={30} color={Colors.WHITE} style={{ marginRight: 10 }} />
-          <Text style={{ color: 'white', fontWeight: 'bold' ,fontSize:20,padding:10}}>Google</Text>
+          <FontAwesome name="google" size={25} color={Colors.PRIMARY} style={{ marginRight: 10 }} />
+          <Text style={{ color: Colors.PRIMARY, fontWeight: 'bold', fontSize: 18, padding: 1 }}>Google</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -56,6 +56,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 20, // Adjust the bottom position as needed
     alignSelf: 'center',
-    marginBottom:120
+    marginBottom: 120
   },
 });

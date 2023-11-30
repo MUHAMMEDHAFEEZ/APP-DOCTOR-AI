@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, TextInput, TouchableOpacity, FlatList, Alert } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 const ChatScreen = () => {
   const [message, setMessage] = useState('');
@@ -32,7 +33,6 @@ const ChatScreen = () => {
         const botMessage = { text: responseData.message, sender: 'bot', key: String(messages.length + 1) };
         setMessages((prevMessages) => [...prevMessages, botMessage]);
 
-        
       } else {
         console.error('API Error:', response.status);
         Alert.alert('API Error', 'An error occurred while communicating with the bot.');
@@ -72,19 +72,21 @@ const ChatScreen = () => {
         extraData={messages}
       />
 
-      <TextInput
-        style={{ borderWidth: 1, padding: 8, marginBottom: 16, borderRadius: 15 }}
-        placeholder="Type your message"
-        value={message}
-        onChangeText={(text) => setMessage(text)}
-      />
-
-      <TouchableOpacity
-        style={{ backgroundColor: '#00A859', borderRadius: 15, padding: 10, alignItems: 'center' }}
-        onPress={sendMessageToBot}
-      >
-        <Text style={{ color: 'white', fontWeight: 'bold' }}>Send Message</Text>
-      </TouchableOpacity>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <TextInput
+          style={{ flex: 1, borderWidth: 1, padding: 8, borderRadius: 15 }}
+          placeholder="Type your message"
+          value={message}
+          onChangeText={(text) => setMessage(text)}
+        />
+        
+        <TouchableOpacity
+          style={{ backgroundColor: '#00A859', borderRadius: 15, padding: 10, alignItems: 'center', marginLeft: 8 }}
+          onPress={sendMessageToBot}
+        >
+          <Ionicons name="send" size={24} color="white" />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
